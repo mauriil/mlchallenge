@@ -63,7 +63,7 @@ function listMessages(auth, query){
           console.error();(err);          
           return;
         }         
-        //resolve(res.data);  
+        resolve(res.data);  
         
         if (res.data.messages.length === 0) {
           console.log('No hay mensajes');

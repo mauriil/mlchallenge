@@ -46,8 +46,9 @@ module.exports = {
         }
       },
 
-    listMessages: function (auth, query){
-        query = 'DevOps';
+    listMessages: function (auth){
+        const query = 'DevOps';
+        
         return new Promise((resolve, reject) => {  
           const gmail = google.gmail({version: 'v1', auth});
           gmail.users.messages.list(      

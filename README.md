@@ -23,8 +23,7 @@ just to have all the dependence packages necessaries to run the server.
 
 After the install process you have to configure the enviroment variable (below explained), and then just have to run:
 ```
-npm start win (if you're in Windows)
-npm start linmac (if you're in Mac or Linux)
+npm start 
 ```
 and the server will bound with the default configuration. You will see debugs on the console.
 

@@ -1,0 +1,18 @@
+{
+    "EXPRESS": {
+        "port": 3000
+    },
+    "LOGGER":{
+        "level": "debug",
+        "tz":"America/Buenos_Aires"
+    },
+    "SEQUELIZE":{
+        "database": "mlchallenge",
+        "user": "guest", 
+        "password": "1RXdQEjE57rzmvrNkERT", 
+        "host": "190.7.57.163", 
+        "port": "3306",
+        "dialect": "mysql",
+        "logging": false
+    }
+}

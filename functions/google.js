@@ -82,7 +82,7 @@ module.exports = {
         gmail.users.getProfile({
           auth: auth,
           userId: 'me'
-        }, function(err, res) {
+        }, function(err, resProfile) {
           if (err) {
             console.log(err);
           } else {
@@ -100,10 +100,10 @@ module.exports = {
                       }
                     }).then(result => {
   
-                      if (result != []) {
+                      if (result === null) {
                         consultModel.create({
                           idMail: msgId,
-                          guestMail: res.data.emailAddress,
+                          guestMail: resProfile.data.emailAddress,
                           dateMail: res.data.payload.headers.filter((result) => result.name === 'Date')[0].value,
                           fromMail: res.data.payload.headers.filter((result) => result.name === 'From')[0].value,
                           subjectMail: res.data.payload.headers.filter((result) => result.name === 'Subject')[0].value

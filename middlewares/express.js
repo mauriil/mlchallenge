@@ -3,7 +3,7 @@ const APP = express();
 const consultModel = require('../models/consult');
 
 APP.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.status(200).send('Hello World!')
   });
 
 APP.get('/newcode', (req, res) => {

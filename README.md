@@ -10,6 +10,7 @@ Instructions to have everything you need to put this deployment into operation.
 
 * NodeJS installed.
 * A web browser (Mozilla, Chrome, Safari, etc).
+* Postman (Just if you like to see prettier the API responses).
 
 ### Install 🛠️ ###
 
@@ -40,8 +41,8 @@ To check the server with the default configuration, acces to _'http://localhost:
 
 ### REST API Endpoint ###
 To retrieve the data stored you have two options:
-1_ In the browser, put the URL: _'http://localhost:3000/mails/YOURMAIL'_ .
-2_ In Postman, make a new GET request to _'http://localhost:3000/mails/YOURMAIL'_ .
+* 1_ In the browser, put the URL: _'http://localhost:3000/mails/YOURMAIL'_ .
+* 2_ In Postman, make a new GET request to _'http://localhost:3000/mails/YOURMAIL'_ .
 
 
 ## Misc configuration ⚙️ ##
